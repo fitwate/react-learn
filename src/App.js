@@ -1,10 +1,26 @@
 import './App.css';
 import React from 'react';
-import { NavLink, Route, Routes } from 'react-router-dom';
-import About from './pages/About';
-import Home from './pages/Home';
+import { NavLink, useRoutes } from 'react-router-dom';
+import routes from "./routes";
 
 function App() {
+//   const element = useRoutes([
+//     {
+//       path:'/about',
+//       element:<About/>
+//     },
+//     {
+//       path:'/home',
+//       element:<Home/>
+//     },
+//     {
+//       path:'/',
+//       element:<Navigate to="/about" />
+//     }
+
+// ]
+//   )
+const element = useRoutes(routes)
   return (
     <div className="App">
       <div>
@@ -14,10 +30,13 @@ function App() {
       </div>
 
       <div>
-        <Routes>
+        {/* <Routes>
           <Route path='/about' element={<About />} />
           <Route path='/home' element={<Home />} />
-        </Routes>
+          <Route path='/' element={<Navigate to="/about" />} />
+          <Route path='*' element={<About />}  />
+        </Routes> */}
+        {element}
       </div>
 
     </div>
