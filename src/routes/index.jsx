@@ -7,6 +7,8 @@ import { Navigate } from 'react-router-dom';
 import Detail from '../pages/Detail';
 import Detail2 from '../pages/Detail2';
 import Message2 from '../pages/Messag2';
+import Message3 from '../pages/Messag3';
+import Detail3 from '../pages/Detail3';
 
 const routes = [
   {
@@ -38,6 +40,16 @@ const routes = [
           {
             path:'detail2',
             element:<Detail2/>
+          }
+        ]
+      },
+      {
+        path: 'message3',
+        element: <Message3 />,
+        children:[
+          {
+            path:'detail3',
+            element:<Detail3/>
           }
         ]
       }

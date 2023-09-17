@@ -16,6 +16,9 @@ export default function Home() {
         <li>
           <NavLink to="message2">message2 search</NavLink>
         </li>
+        <li>
+          <NavLink to="message3">message3 state</NavLink>
+        </li>
 
       </ul>
       <hr />
