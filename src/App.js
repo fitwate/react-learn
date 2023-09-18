@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { NavLink, useRoutes } from 'react-router-dom';
+import { NavLink, useRoutes,useInRouterContext } from 'react-router-dom';
 import routes from "./routes";
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
 
 // ]
 //   )
+console.log("is in router env: ",useInRouterContext())
 const element = useRoutes(routes)
   return (
     <div className="App">

@@ -1,14 +1,15 @@
 import React from 'react'
-import { NavLink,Outlet} from 'react-router-dom'
+import { NavLink,Outlet,useOutlet} from 'react-router-dom'
 
 export default function Home() {
+  console.log(useOutlet())
   return (
     <div>
       <hr />
       <h2> home content</h2>
       <ul>
         <li>
-          <NavLink to="news">news</NavLink>
+          <NavLink to="news" replace >news</NavLink>
         </li>
         <li>
           <NavLink to="message">message Params</NavLink>
