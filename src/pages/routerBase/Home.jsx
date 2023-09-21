@@ -5,7 +5,6 @@ export default function Home() {
   console.log(useOutlet())
   return (
     <div>
-      <hr />
       <h2> home content</h2>
       <ul>
         <li>

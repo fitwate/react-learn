@@ -1,14 +1,14 @@
-import About from '../pages/About';
-import Home from '../pages/Home';
-import News from '../pages/News';
-import Message from '../pages/Message';
+import About from '../pages/routerBase/About';
+import Home from '../pages/routerBase/Home';
+import News from '../pages/routerBase/News';
+import Message from '../pages/routerBase/Message';
 
 import { Navigate } from 'react-router-dom';
-import Detail from '../pages/Detail';
-import Detail2 from '../pages/Detail2';
-import Message2 from '../pages/Messag2';
-import Message3 from '../pages/Messag3';
-import Detail3 from '../pages/Detail3';
+import Detail from '../pages/routerBase/Detail';
+import Detail2 from '../pages/routerBase/Detail2';
+import Message2 from '../pages/routerBase/Messag2';
+import Message3 from '../pages/routerBase/Messag3';
+import Detail3 from '../pages/routerBase/Detail3';
 
 const routes = [
   {
