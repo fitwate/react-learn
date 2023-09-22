@@ -1,5 +1,5 @@
 X1. 学习自定义主题：修改主题颜色
-2. 引入路由
+x2. 引入路由
 x   antd中如何使用NavLink？还是不能使用，只能使用Menu onClick事件？
-   menu的使用
+x   menu的使用
 3. 按视频再学习一般router6

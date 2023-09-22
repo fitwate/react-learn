@@ -1,11 +1,16 @@
-import React from 'react'
-import { NavLink,Outlet,useOutlet} from 'react-router-dom'
+import { Button } from 'antd'
+import React, { useState } from 'react'
+import { NavLink, Navigate, Outlet, useOutlet } from 'react-router-dom'
 
 export default function Home() {
-  console.log(useOutlet())
+  console.log("useOutlet: ", useOutlet())
+  const [sum, setSum] = useState(1)
   return (
     <div>
+     {/* Navigate 加载即执行 */}
       <h2> home content</h2>
+      {sum === 1 ? <h4>sum value is {sum}</h4> : <Navigate to="/about" />}
+      <Button onClick={() => setSum(2)}>click me sum change to 2</Button>
       <ul>
         <li>
           <NavLink to="news" replace >news</NavLink>
@@ -22,7 +27,7 @@ export default function Home() {
 
       </ul>
       <hr />
-      <Outlet/>
+      <Outlet />
     </div>
   )
 }
