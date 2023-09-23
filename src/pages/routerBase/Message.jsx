@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Link,Outlet} from 'react-router-dom'
+import { Link, Outlet, useOutlet } from 'react-router-dom'
 
 export default function Message() {
+  console.log("useOutlet: ", useOutlet())
   const [messages] = useState(
     [
       { id: '001', title: 'msg01', content: 'xxxxx01' },
@@ -25,7 +26,7 @@ export default function Message() {
         }
       </ul>
       <hr />
-      <Outlet/>
+      <Outlet />
 
     </div>
   )

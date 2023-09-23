@@ -1,9 +1,8 @@
 import { Button } from 'antd'
 import React, { useState } from 'react'
-import { NavLink, Navigate, Outlet, useOutlet } from 'react-router-dom'
+import { NavLink, Navigate, Outlet} from 'react-router-dom'
 
 export default function Home() {
-  console.log("useOutlet: ", useOutlet())
   const [sum, setSum] = useState(1)
   return (
     <div>
