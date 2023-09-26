@@ -25,13 +25,17 @@ const items = [
     getItem('home', '/home'),
   ]
   ),
+  getItem('reactDocs', 'sub2', <TeamOutlined />, [
+    getItem('base', '/reactDocs/base'), 
+    getItem('test', '/reactDocs/test')
+  ]),
   getItem('Option 2', '2', <DesktopOutlined />),
-  getItem('User', 'sub2', <UserOutlined />, [
+  getItem('User', 'sub3', <UserOutlined />, [
     getItem('Tom', '3'),
     getItem('Bill', '4'),
     getItem('Alex', '5'),
   ]),
-  getItem('Team', 'sub3', <TeamOutlined />, [
+  getItem('Team', 'sub4', <TeamOutlined />, [
     getItem('Team 1', '6'), 
     getItem('Team 2', '8')
   ]),

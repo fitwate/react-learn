@@ -9,6 +9,8 @@ import Detail2 from '../pages/routerBase/Detail2';
 import Message2 from '../pages/routerBase/Messag2';
 import Message3 from '../pages/routerBase/Messag3';
 import Detail3 from '../pages/routerBase/Detail3';
+import Base from '../pages/reactDocs/Base';
+import Test from '../pages/reactDocs/Test';
 
 const routes = [
   {
@@ -52,6 +54,19 @@ const routes = [
             element:<Detail3/>
           }
         ]
+      }
+    ]
+  },
+  {
+    path: '/reactDocs',
+    children: [
+      {
+        path: 'base',
+        element: <Base />
+      },
+      {
+        path: 'test',
+        element: <Test />
       }
     ]
   },
