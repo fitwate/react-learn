@@ -11,6 +11,7 @@ import Message3 from '../pages/routerBase/Messag3';
 import Detail3 from '../pages/routerBase/Detail3';
 import Base from '../pages/reactDocs/Base';
 import Test from '../pages/reactDocs/Test';
+import Sharingdata from '../pages/reactDocs/Sharingdata'
 
 const routes = [
   {
@@ -66,7 +67,13 @@ const routes = [
       },
       {
         path: 'test',
-        element: <Test />
+        element: <Test />,
+        children:[
+          {
+            path:'sharingdata',
+            element:<Sharingdata />
+          }
+        ]
       }
     ]
   },
