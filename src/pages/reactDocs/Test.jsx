@@ -9,7 +9,7 @@ export default function Test() {
           <NavLink to="sharingdata" >Sharing data between components </NavLink>
         </li>
         <li>
-          <NavLink to="test2">test2</NavLink>
+          <NavLink to="exporttest">ExportTest</NavLink>
         </li>
         <li>
           <NavLink to="test3">test3</NavLink>
