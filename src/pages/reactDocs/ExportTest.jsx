@@ -3,10 +3,10 @@ import Gallery from './Gallery';
 import { Profile } from './Gallery';
 
 // 嵌套组件
-function Card({ children }) {
+function Card({ children, title }) {
   return (
     <div >
-     <h1>嵌套组件</h1>
+      <h1>{title}</h1>
       {children}
     </div>
   );
@@ -14,7 +14,7 @@ function Card({ children }) {
 
 export default function ExportTest() {
   return (
-    <Card>
+    <Card title="嵌套组件">
       <Profile />
       <Gallery
         propsV1="test props transfer"
