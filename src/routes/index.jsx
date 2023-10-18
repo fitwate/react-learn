@@ -13,6 +13,8 @@ import Base from '../pages/reactDocs/Base';
 import Test from '../pages/reactDocs/Test';
 import Sharingdata from '../pages/reactDocs/Sharingdata';
 import ExportTest from '../pages/reactDocs/ExportTest';
+import LearnIf from '../pages/reactDocs/LearnIf';
+import RenderingLists from '../pages/reactDocs/RenderingLists'
 
 const routes = [
   {
@@ -77,6 +79,14 @@ const routes = [
           {
             path:'exporttest',
             element:<ExportTest />
+          },
+          {
+            path:'learnif',
+            element:<LearnIf />
+          },
+          {
+            path:'renderinglists',
+            element:<RenderingLists />
           }
         ]
       }
