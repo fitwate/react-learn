@@ -12,7 +12,10 @@ export default function Test() {
           <NavLink to="exporttest">ExportTest</NavLink>
         </li>
         <li>
-          <NavLink to="test3">test3</NavLink>
+          <NavLink to="learnif">LearnIf</NavLink>
+        </li>
+        <li>
+          <NavLink to="renderinglists">RenderingLists</NavLink>
         </li>
       </ul>
       <hr />
