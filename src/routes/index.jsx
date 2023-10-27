@@ -15,6 +15,7 @@ import Sharingdata from '../pages/reactDocs/Sharingdata';
 import ExportTest from '../pages/reactDocs/ExportTest';
 import LearnIf from '../pages/reactDocs/LearnIf';
 import RenderingLists from '../pages/reactDocs/RenderingLists'
+import RespondingToEvents from '../pages/reactDocs/RespondingToEvents';
 
 const routes = [
   {
@@ -87,6 +88,9 @@ const routes = [
           {
             path:'renderinglists',
             element:<RenderingLists />
+          },{
+            path:'respondingtoevents',
+            element:<RespondingToEvents />
           }
         ]
       }

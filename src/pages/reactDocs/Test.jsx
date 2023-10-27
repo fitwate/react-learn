@@ -17,6 +17,9 @@ export default function Test() {
         <li>
           <NavLink to="renderinglists">RenderingLists</NavLink>
         </li>
+        <li>
+          <NavLink to="respondingtoevents">RespondingToEvents</NavLink>
+        </li>
       </ul>
       <hr />
       <Outlet />
