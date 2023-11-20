@@ -20,6 +20,9 @@ export default function Test() {
         <li>
           <NavLink to="respondingtoevents">RespondingToEvents</NavLink>
         </li>
+        <li>
+          <NavLink to="mailclient">MailClient(Choosing the State Structure)</NavLink>
+        </li>
       </ul>
       <hr />
       <Outlet />

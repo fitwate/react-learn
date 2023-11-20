@@ -16,6 +16,7 @@ import ExportTest from '../pages/reactDocs/ExportTest';
 import LearnIf from '../pages/reactDocs/LearnIf';
 import RenderingLists from '../pages/reactDocs/RenderingLists'
 import RespondingToEvents from '../pages/reactDocs/RespondingToEvents';
+import MailClient from '../pages/reactDocs/MailClient';
 
 const routes = [
   {
@@ -91,6 +92,9 @@ const routes = [
           },{
             path:'respondingtoevents',
             element:<RespondingToEvents />
+          },{
+            path:'mailclient',
+            element:<MailClient />
           }
         ]
       }
