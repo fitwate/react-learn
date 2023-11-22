@@ -23,6 +23,9 @@ export default function Test() {
         <li>
           <NavLink to="mailclient">MailClient(Choosing the State Structure)</NavLink>
         </li>
+        <li>
+          <NavLink to="filterablelist">FilterableList(Sharing State Between Components)</NavLink>
+        </li>
       </ul>
       <hr />
       <Outlet />
