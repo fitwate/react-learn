@@ -17,7 +17,8 @@ import LearnIf from '../pages/reactDocs/LearnIf';
 import RenderingLists from '../pages/reactDocs/RenderingLists'
 import RespondingToEvents from '../pages/reactDocs/RespondingToEvents';
 import MailClient from '../pages/reactDocs/MailClient';
-import FilterableList from '../pages/reactDocs/FilterableList'
+import FilterableList from '../pages/reactDocs/FilterableList';
+import ReducerLearn from '../pages/reactDocs/reducer/ReducerLearn';
 
 const routes = [
   {
@@ -96,12 +97,14 @@ const routes = [
           },{
             path:'mailclient',
             element:<MailClient />
-          }
-          ,{
+          },{
             path:'filterablelist',
             element:<FilterableList />
           }
         ]
+      },{
+        path: 'reducerlearn',
+        element: <ReducerLearn />
       }
     ]
   },

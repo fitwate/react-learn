@@ -27,7 +27,8 @@ const items = [
   ),
   getItem('reactDocs', 'sub2', <TeamOutlined />, [
     getItem('base', '/reactDocs/base'), 
-    getItem('test', '/reactDocs/test')
+    getItem('test', '/reactDocs/test'),
+    getItem('reducerlearn', '/reactDocs/reducerlearn')
   ]),
   getItem('Option 2', '2', <DesktopOutlined />),
   getItem('User', 'sub3', <UserOutlined />, [
