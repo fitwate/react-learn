@@ -19,7 +19,7 @@ import RespondingToEvents from '../pages/reactDocs/RespondingToEvents';
 import MailClient from '../pages/reactDocs/MailClient';
 import FilterableList from '../pages/reactDocs/FilterableList';
 import ReducerLearn from '../pages/reactDocs/reducer/ReducerLearn';
-
+import ContextLearn from '../pages/reactDocs/context/ContextLearn';
 const routes = [
   {
     path: '/about',
@@ -36,30 +36,30 @@ const routes = [
       {
         path: 'message',
         element: <Message />,
-        children:[
+        children: [
           {
-            path:'detail/:id/:title/:content',
-            element:<Detail/>
+            path: 'detail/:id/:title/:content',
+            element: <Detail />
           }
         ]
       },
       {
         path: 'message2',
         element: <Message2 />,
-        children:[
+        children: [
           {
-            path:'detail2',
-            element:<Detail2/>
+            path: 'detail2',
+            element: <Detail2 />
           }
         ]
       },
       {
         path: 'message3',
         element: <Message3 />,
-        children:[
+        children: [
           {
-            path:'detail3',
-            element:<Detail3/>
+            path: 'detail3',
+            element: <Detail3 />
           }
         ]
       }
@@ -75,36 +75,39 @@ const routes = [
       {
         path: 'test',
         element: <Test />,
-        children:[
+        children: [
           {
-            path:'sharingdata',
-            element:<Sharingdata />
+            path: 'sharingdata',
+            element: <Sharingdata />
           },
           {
-            path:'exporttest',
-            element:<ExportTest />
+            path: 'exporttest',
+            element: <ExportTest />
           },
           {
-            path:'learnif',
-            element:<LearnIf />
+            path: 'learnif',
+            element: <LearnIf />
           },
           {
-            path:'renderinglists',
-            element:<RenderingLists />
-          },{
-            path:'respondingtoevents',
-            element:<RespondingToEvents />
-          },{
-            path:'mailclient',
-            element:<MailClient />
-          },{
-            path:'filterablelist',
-            element:<FilterableList />
+            path: 'renderinglists',
+            element: <RenderingLists />
+          }, {
+            path: 'respondingtoevents',
+            element: <RespondingToEvents />
+          }, {
+            path: 'mailclient',
+            element: <MailClient />
+          }, {
+            path: 'filterablelist',
+            element: <FilterableList />
           }
         ]
-      },{
+      }, {
         path: 'reducerlearn',
         element: <ReducerLearn />
+      }, {
+        path: 'contextLearn',
+        element: <ContextLearn />
       }
     ]
   },
