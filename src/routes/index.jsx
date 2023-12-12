@@ -20,6 +20,8 @@ import MailClient from '../pages/reactDocs/MailClient';
 import FilterableList from '../pages/reactDocs/FilterableList';
 import ReducerLearn from '../pages/reactDocs/reducer/ReducerLearn';
 import ContextLearn from '../pages/reactDocs/context/ContextLearn';
+import EscapeHatches from '../pages/reactDocs/escapeHatches/EscapeHatches';
+import RefBase from '../pages/reactDocs/escapeHatches/RefBase'
 const routes = [
   {
     path: '/about',
@@ -108,6 +110,16 @@ const routes = [
       }, {
         path: 'contextLearn',
         element: <ContextLearn />
+      }
+      , {
+        path: 'escapeHatches',
+        element: <EscapeHatches />,
+        children: [
+          {
+            path: 'refbase',
+            element: <RefBase />
+          },
+        ]
       }
     ]
   },

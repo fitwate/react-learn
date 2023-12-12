@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useRoutes,useLocation,useNavigate } from 'react-router-dom';
+import { useRoutes, useLocation, useNavigate } from 'react-router-dom';
 
 import {
   DesktopOutlined,
@@ -20,17 +20,18 @@ function getItem(label, key, icon, children) {
   };
 }
 const items = [
-  getItem('routerBase', 'sub1', <PieChartOutlined />,[
+  getItem('routerBase', 'sub1', <PieChartOutlined />, [
     getItem('about', '/about'),
     getItem('home', '/home'),
   ]
   ),
   getItem('reactDocs', 'sub2', <TeamOutlined />, [
-    getItem('base', '/reactDocs/base'), 
+    getItem('base', '/reactDocs/base'),
     getItem('test', '/reactDocs/test'),
     getItem('reducerlearn', '/reactDocs/reducerlearn'),
-    getItem('contextLearn', '/reactDocs/contextLearn')
-    
+    getItem('contextLearn', '/reactDocs/contextLearn'),
+    getItem('escapeHatches', '/reactDocs/escapeHatches'),
+
   ]),
   getItem('Option 2', '2', <DesktopOutlined />),
   getItem('User', 'sub3', <UserOutlined />, [
@@ -39,7 +40,7 @@ const items = [
     getItem('Alex', '5'),
   ]),
   getItem('Team', 'sub4', <TeamOutlined />, [
-    getItem('Team 1', '6'), 
+    getItem('Team 1', '6'),
     getItem('Team 2', '8')
   ]),
   getItem('Files', '9', <FileOutlined />),
@@ -53,7 +54,7 @@ const App = () => {
   } = theme.useToken();
 
   const location = useLocation();
-  const navigate =useNavigate()
+  const navigate = useNavigate()
   const onMenuClick = (e) => {
     // navigate(e.key,{ state:loginUserInfo });
     navigate(e.key);
@@ -67,7 +68,7 @@ const App = () => {
     >
       <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
         <div className="demo-logo-vertical" />
-        <Menu theme="dark" defaultSelectedKeys={[location.pathname]} selectedKeys={[location.pathname]} defaultOpenKeys={['Sub1','Sub2']} mode="inline" items={items} onClick={onMenuClick} />
+        <Menu theme="dark" defaultSelectedKeys={[location.pathname]} selectedKeys={[location.pathname]} defaultOpenKeys={['Sub1', 'Sub2']} mode="inline" items={items} onClick={onMenuClick} />
       </Sider>
       <Layout>
         <Header
