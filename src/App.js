@@ -28,9 +28,9 @@ const items = [
   getItem('reactDocs', 'sub2', <TeamOutlined />, [
     getItem('base', '/reactDocs/base'),
     getItem('test', '/reactDocs/test'),
-    getItem('reducerlearn', '/reactDocs/reducerlearn'),
-    getItem('contextLearn', '/reactDocs/contextLearn'),
-    getItem('escapeHatches', '/reactDocs/escapeHatches'),
+    getItem('Reducer管理状态', '/reactDocs/reducerlearn'),
+    getItem('context深层传递', '/reactDocs/contextLearn'),
+    getItem('应急方案', '/reactDocs/escapeHatches'),
 
   ]),
   getItem('Option 2', '2', <DesktopOutlined />),
