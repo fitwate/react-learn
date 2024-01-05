@@ -8,6 +8,9 @@ export default function EscapeHatches() {
                 <li>
                     <NavLink to="refbase" >RefBase </NavLink>
                 </li>
+                <li>
+                    <NavLink to="customhooksbase" >Custom Hooks: Sharing logic between components </NavLink>
+                </li>
             </ul>
             <hr />
             <Outlet />

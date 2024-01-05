@@ -22,6 +22,7 @@ import ReducerLearn from '../pages/reactDocs/reducer/ReducerLearn';
 import ContextLearn from '../pages/reactDocs/context/ContextLearn';
 import EscapeHatches from '../pages/reactDocs/escapeHatches/EscapeHatches';
 import RefBase from '../pages/reactDocs/escapeHatches/RefBase'
+import CustomHooksBase from '../pages/reactDocs/escapeHatches/CustomHooksBase';
 const routes = [
   {
     path: '/about',
@@ -118,6 +119,10 @@ const routes = [
           {
             path: 'refbase',
             element: <RefBase />
+          },
+          {
+            path: 'customhooksbase',
+            element: <CustomHooksBase />
           },
         ]
       }
